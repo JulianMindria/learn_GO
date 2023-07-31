@@ -5,6 +5,9 @@ import (
 	"math/rand"
 	"time"
 	"strings"
+	"julianmindria/belajargo/firstTask"
+	"julianmindria/belajargo/sequence"
+	"julianmindria/belajargo/cubes"
 )
 
 func main() {
@@ -17,6 +20,22 @@ func main() {
 	// Task 3
 	// elems := []int{1, 7, 3, 4, 8, 9}
 	// chooseMovie(elems, 8)
+
+	firstTask.RoundNum(14.5644)
+
+	deret := sequence.DeretBilang{40} 
+	deret.PrimeSeq()
+	deret.FibonacciSeq()
+	deret.OddNum()
+	deret.EvenNum()
+
+	c := cubes.Cube{5,5,5}
+	fmt.Println("\nHitung 2D")
+    fmt.Println("Luas = ", c.Luas(), "cm2")
+    fmt.Println("Keliling = ", c.Keliling(), "cm2")
+	fmt.Println("\nHitung 3D")
+    fmt.Println("Volume = ", c.Volume(), "cm3")
+
 }
 
 // TASK 1 - INVERTED TRIANGLE
@@ -32,9 +51,6 @@ func segitiga(n int) {
 		fmt.Println()
 	}
 }
-
-
-
 
 // TASK 2 - GENERATE PASSWORD
 
@@ -105,6 +121,4 @@ func chooseMovie(elems []int, flight_time int) {
 		}
 	}
 }
-
-
 
